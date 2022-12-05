@@ -15,6 +15,11 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 public class ExampleModel extends UstraManagementBaseModel {
 
+	/*
+	 *
+	 * develop branch commit
+	 */
+
     @ApiModelProperty("그룹 코드")
     private String grpCd;
 
