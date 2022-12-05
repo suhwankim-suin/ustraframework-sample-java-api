@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/greeting")
 public class GreetingController {
 	/*
-	 * feauture branch
+	 * merge commit
+	 *
 	 */
     @GetMapping
     @ApiOperation(value = "Greetings", notes = "Greetings from U.STRA")
