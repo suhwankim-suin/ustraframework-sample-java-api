@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/greeting")
 public class GreetingController {
+	/*
+	 * develop branch commit
+	 * ffffff
+	 */
     @GetMapping
     @ApiOperation(value = "Greetings", notes = "Greetings from U.STRA")
     @ResponseBody
