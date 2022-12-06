@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/greeting")
 public class GreetingController {
 	/*
-	 * merge commit
+	 *  개발중 develop branch 수정됨
 	 *
 	 */
     @GetMapping
