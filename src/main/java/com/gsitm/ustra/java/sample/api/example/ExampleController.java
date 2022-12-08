@@ -26,13 +26,14 @@ public class ExampleController {
 
 
     /*
-     * feauture branch commit
+     * feauture branch commit 수정됨
+     *
      *
      */
 
     @GetMapping("/common/code")
-    @ApiOperation(value = "전체 코드 목록 조회", notes = "<strong>코드 전체 목록</string>을 반환")
-    public List<ExampleModel> getAll(@ApiParam("사용 여부") String useYn) {
+    @ApiOperation(value = "�쟾泥� 肄붾뱶 紐⑸줉 議고쉶", notes = "<strong>肄붾뱶 �쟾泥� 紐⑸줉</string>�쓣 諛섑솚")
+    public List<ExampleModel> getAll(@ApiParam("�궗�슜 �뿬遺�") String useYn) {
 
         ExampleModel.Criteria criteria = new ExampleModel.Criteria();
         criteria.setUseYn(useYn);
@@ -41,7 +42,7 @@ public class ExampleController {
     }
 
     @PostMapping("/common/code/page")
-    @ApiOperation(value = "페이지별 코드 목록 조회", notes = "페이지별 코드 목록을 반환")
+    @ApiOperation(value = "�럹�씠吏�蹂� 肄붾뱶 紐⑸줉 議고쉶", notes = "�럹�씠吏�蹂� 肄붾뱶 紐⑸줉�쓣 諛섑솚")
     public PaginationList<ExampleModel> getCodesByPage(@RequestBody PaginationRequest request) {
         return this.exampleService.getCodes(request);
     }
